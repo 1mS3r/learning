@@ -111,6 +111,12 @@ Task 7. Create a WordPress deployment
   
 Task 8. Create an Uptime Check
 
+    Go to Monitoring -> Uptime Checks -> Create Uptime Check and fill with following data, being the IP the external IP one of the Wordpress service created in Kubernetes Services:
+
+    ![uptime-check](/img/uptime-check.png)
+
 Task 9. Add second user to project
 
-    Just need to go to IAM -> Grant Access and use the 2nd provided user with following configuration
+    Just need to go to IAM -> Grant Access and use the 2nd provided user with following configuration:
+
+    ![grant-role](/img/grant-editor-role.png)
