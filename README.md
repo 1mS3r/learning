@@ -1,2 +1,2 @@
 # learning
-Repo to track an index trainings performed in different technologies
+Repo to track and index trainings performed in different technologies
