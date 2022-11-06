@@ -23,20 +23,6 @@ gcloud compute networks subnets create griffin-prod-wp --network=griffin-prod-vp
 gcloud compute networks subnets create griffin-prod-mgmt --network=griffin-prod-vpc --region us-east1 --range=192.168.64.0/20
 ```
 
-Workaround:
-
-gsutil cp -r gs://cloud-training/gsp321/dm .
-
-cd dm
-
-sed -i s/SET_REGION/us-east1/g prod-network.yaml
-
-gcloud deployment-manager deployments create prod-network \
-    --config=prod-network.yaml
-
-cd ..
-
-
 Task 3. Create bastion host
 
 ```
