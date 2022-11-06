@@ -101,10 +101,10 @@ Open Editor and on wp-deployment.yaml Replace YOUR_SQL_INSTANCE with griffin-dev
 
 Go to Monitoring -> Uptime Checks -> Create Uptime Check and fill with following data, being the IP the external IP one of the Wordpress service created in Kubernetes Services:
 
-![uptime-check](/img/uptime-check.png)
+![uptime-check](img/uptime-check.png)
 
 ### Task 9. Add second user to project
 
 Just need to go to IAM -> Grant Access and use the 2nd provided user with following configuration:
 
-![grant-role](/img/grant-editor-role.png)
+![grant-role](img/grant-editor-role.png)
