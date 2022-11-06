@@ -36,16 +36,16 @@ gcloud compute firewall-rules create fw-ssh-prod --source-ranges=0.0.0.0/0 --tar
 
 Task 4. Create and configure Cloud SQL Instance
 
-Create instance first:
+* Create instance first:
 ```
 gcloud sql instances create griffin-dev-db --root-password password --region=us-east1 --database-version=MYSQL_5_7
 ````
 
-Connect:
+* Connect:
 ```
 gcloud sql connect griffin-dev-db
 ````
-Execute the batch of commands required:
+* Execute the batch of commands required:
 ```
 CREATE DATABASE wordpress;
 GRANT ALL PRIVILEGES ON wordpress.* TO "wp_user"@"%" IDENTIFIED BY "stormwind_rules";
@@ -87,7 +87,7 @@ Task 6. Prepare the Kubernetes cluster
   
 Task 7. Create a WordPress deployment
   
-    Open Editor and on wp-deployment.yaml Replace YOUR_SQL_INSTANCE with griffin-dev-db's Instance connection name, which can be found clicking over it on SQL menu.
+    * Open Editor and on wp-deployment.yaml Replace YOUR_SQL_INSTANCE with griffin-dev-db's Instance connection name, which can be found clicking over it on SQL menu.
 
    ```
    kubectl create -f wp-deployment.yaml
@@ -97,12 +97,12 @@ Task 7. Create a WordPress deployment
   
 Task 8. Create an Uptime Check
 
-    Go to Monitoring -> Uptime Checks -> Create Uptime Check and fill with following data, being the IP the external IP one of the Wordpress service created in Kubernetes Services:
+    * Go to Monitoring -> Uptime Checks -> Create Uptime Check and fill with following data, being the IP the external IP one of the Wordpress service created in Kubernetes Services:
 
     ![uptime-check](/img/uptime-check.png)
 
 Task 9. Add second user to project
 
-    Just need to go to IAM -> Grant Access and use the 2nd provided user with following configuration:
+    * Just need to go to IAM -> Grant Access and use the 2nd provided user with following configuration:
 
     ![grant-role](/img/grant-editor-role.png)
