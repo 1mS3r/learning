@@ -57,52 +57,54 @@ gcloud compute firewall-rules create fw-ssh-prod --source-ranges=0.0.0.0/0 --tar
 
 ### Task 5. Create Kubernetes cluster
 
-    ```
+```
     gcloud container clusters create griffin-dev \
     --network griffin-dev-vpc \
     --subnetwork griffin-dev-wp \
     --machine-type n1-standard-4 \
     --num-nodes 2  \
     --zone us-east1-b
-    ```
-  
+```
+
+
 ### Task 6. Prepare the Kubernetes cluster
 
-    ```
+```
     gsutil cp -r gs://cloud-training/gsp321/wp-k8s .
     cd wp-k8s
     sed -i s/username_goes_here/wp_user/g wp-env.yaml
     sed -i s/password_goes_here/stormwind_rules/g wp-env.yaml
-    ```
-    ```
+```
+    
+```
     kubectl apply -f wp-env.yaml
-    ```
+```
 
-    ```
+```
     gcloud iam service-accounts keys create key.json \
         --iam-account=cloud-sql-proxy@$GOOGLE_CLOUD_PROJECT.iam.gserviceaccount.com
         kubectl create secret generic cloudsql-instance-credentials \
         --from-file key.json
-    ```
-  
-### Task 7. Create a WordPress deployment
-  
-    Open Editor and on wp-deployment.yaml Replace YOUR_SQL_INSTANCE with griffin-dev-db's Instance connection name, which can be found clicking over it on SQL menu.
+```
 
-    ```
+### Task 7. Create a WordPress deployment
+
+Open Editor and on wp-deployment.yaml Replace YOUR_SQL_INSTANCE with griffin-dev-db's Instance connection name, which can be found clicking over it on SQL menu.
+
+```
     kubectl create -f wp-deployment.yaml
 
     kubectl create -f wp-service.yaml
-    ```
-  
+```
+
 ### Task 8. Create an Uptime Check
 
-    Go to Monitoring -> Uptime Checks -> Create Uptime Check and fill with following data, being the IP the external IP one of the Wordpress service created in Kubernetes Services:
+Go to Monitoring -> Uptime Checks -> Create Uptime Check and fill with following data, being the IP the external IP one of the Wordpress service created in Kubernetes Services:
 
-    ![uptime-check](/img/uptime-check.png)
+![uptime-check](/img/uptime-check.png)
 
 ### Task 9. Add second user to project
 
-    Just need to go to IAM -> Grant Access and use the 2nd provided user with following configuration:
+Just need to go to IAM -> Grant Access and use the 2nd provided user with following configuration:
 
-    ![grant-role](/img/grant-editor-role.png)
+![grant-role](/img/grant-editor-role.png)
