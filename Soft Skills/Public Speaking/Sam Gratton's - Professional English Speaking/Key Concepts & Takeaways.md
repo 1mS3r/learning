@@ -14,10 +14,13 @@ Establish a clear and achievable objective.
 2. Not clear, too broad so its not likely to happen
 3. Clear but not specified, should be better to set it to be done during the meeting
 
+![Objetive Definition Examples](img/objetiveDefinition.png)
+
 #### Define your audience
 
 Depending on the expected audience you should be prepared in advance to deal with them adequately:
 
+![Audience Types](img/audienceType.png)
 #### Brainstorm Benefits & Obstacles
  
 Bring out benefits and obstacles relating to your speech to generate a discussion.
@@ -36,6 +39,8 @@ Your 3 best points to present to the audience about your speech, they can includ
 
 It's important to use signal words to guide the audience and ease the flow of the discourse:
 
+![Signal Words](img/signalWords.png)
+
 Avoid filler words: uhmm, er, so..., u know..., it's better to slow down and/or be quiet briefly to think.
 
 #### Conclusion
@@ -46,3 +51,7 @@ Summary of the speech inciding on the motivation of the same and moving the peop
 
 Something to keep audience interested, done at the start and returned to it at the end: Quote, personal history, question, quotation.
 
+![Hook types](img/theHook.png)
+
+#### Ted Talk 2011 Example
+![Arrangment Example](img/arrangementExample.png)
