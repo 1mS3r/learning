@@ -25,9 +25,9 @@ Well, yes I am, and that should give you a hint on how deep touched my heart thi
 
 But, let's say something about the plot itself, the story follows an unconventional detective and his most close friend in a myriad of cases that challenge the imagination of the reader, I'm not going to spoil anything relevant as the least I want is to steal from you the pleasure to share step by step the findings of this duo.
 
-As a last words, allow me to make a some reflection, this book is full of mistery and adventure, in fact, that's it's genre in the library, but for me it's speaking of curiosity, persistence and most importantly team play, no matter how smart you are you'll always improve if you count with another one's point of view. (edited) 
-1 reply
+As a last words, allow me to make a some reflection, this book is full of mistery and adventure, in fact, that's it's genre in the library, but for me it's speaking of curiosity, persistence and most importantly team play, no matter how smart you are you'll always improve if you count with another one's point of view.
 
-
-Please remember, the adventures of Sherlock Holmes, you are not going to regret it
+Please remember, the adventures of Sherlock Holmes, you are not going to regret it.
 ```
+#### Feedback: 
+- Stick to the time limit

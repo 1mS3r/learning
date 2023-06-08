@@ -8,7 +8,7 @@
 
 #### Define your objective
 
-Establish a clear and achievable objective.
+Establish a clear and achievable objective, it should fit in a sentence.
 
 1. Clear and tangible
 2. Not clear, too broad so its not likely to happen
@@ -23,7 +23,7 @@ Depending on the expected audience you should be prepared in advance to deal wit
 ![Audience Types](img/audienceType.png)
 #### Brainstorm Benefits & Obstacles
  
-Bring out benefits and obstacles relating to your speech to generate a discussion.
+Bring out benefits and obstacles relating to your speech to generate a discussion, bear in mind that you're there to benefit the audience.
 
 ### Arrangment
 
@@ -31,11 +31,12 @@ How the order of the speech has to be determined so its effective and pleasant.
 
 #### Introduction
 
-Benefits to the audience regarding what you're about to say.
+Benefits to the audience regarding what you're about to say. Why is this interesting for them?
 
 #### 3 Points
 
 Your 3 best points to present to the audience about your speech, they can include counter arguments, should be the most effective one can find.
+Scientifically 3 is the number of things they can remember consistently.
 
 It's important to use signal words to guide the audience and ease the flow of the discourse:
 
@@ -53,5 +54,5 @@ Something to keep audience interested, done at the start and returned to it at t
 
 ![Hook types](img/theHook.png)
 
-#### Ted Talk 2011 Example
+#### Ted Talk 2011 Example: 3 Things I learned when my plane crashed
 ![Arrangment Example](img/arrangementExample.png)
