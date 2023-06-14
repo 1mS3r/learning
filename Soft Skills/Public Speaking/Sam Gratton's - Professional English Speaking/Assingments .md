@@ -36,9 +36,9 @@ Please remember, the adventures of Sherlock Holmes, you are not going to regret 
 
 Hello friends, let me ask you something, Since working remotely have you been feeling more isolated? Somewhat disconnected from most of the people you work with? If its a yes, you're not alone, what otherwise were pleasant moments of connection between pairs when grabbing a coffe, having small talk in a corridor or in the lunch time are now moments of solitude in your room.
 
-The problem is that we are often too shy, or too worried to bother someone with an spontaneus virtual conversation, But I've come here with a solution for it, a solution that has name, the name is Diego.
+The problem is that we are often too shy, or too worried to bother someone with an spontaneus virtual conversation, But I've come here with a solution for it, a solution that has name, the name is Diego and I want you to schedule a virtual cofee with him.
 
-I will go straight to the point and give you 3 reasons you should know him:
+I will go straight to the point and give you 3 reasons you should do that:
 
 I can start saying that Diego is a kind and friendly developer that displays an incredible domain over the digital world, he worked across several teams within the company so if you have any doubt about our product inner workings, he's your man.
 
