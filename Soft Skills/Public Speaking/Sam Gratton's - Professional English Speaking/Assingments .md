@@ -11,7 +11,7 @@ I've a little daughter, a cat and recently a puppy so... you can bet I'm enterta
 
 As an experienced backend engineer I can support any company willing to develop new software or improve and maintain existing one by working on the digital engines of the product, which can not be seen but allow the project to live.
 
-## Task 2: Convince us to... read your favorite book: 
+## Task 2: Convince us to... read your favorite book (recorded): 
  - Define your objective: Get the audience read the book / Put it on top of their backlog
  - Define your audience: Tech workers, coworkers - Friendly
 
@@ -31,3 +31,18 @@ Please remember, the adventures of Sherlock Holmes, you are not going to regret 
 ```
 #### Feedback: 
 - Stick to the time limit
+
+## Task 3: Convice us to... Invite my partner for a coffe (live):
+
+Hello friends, let me ask you something, Since working remotely have you been feeling more isolated? Somewhat disconnected from most of the people you work with? If its a yes, you're not alone, what otherwise were pleasant moments of connection between pairs when grabbing a coffe, having small talk in a corridor or in the lunch time.
+
+The problem is that we are often too shy, or too worried to bother someone with an spontaneus virtual conversation, But I've come here with a solution for it, a solution that has name, the name is Diego.
+I will go straight to the point and give you 3 reasons you should know him:
+
+I can start saying that Diego is a kind and friendly developer that displays an incredible domain over the digital world, he worked across several teams within the company so if you have any doubt about Empathy product inner workings, he's your man.
+
+I will continue with some of his hobbies, as an sportive person he likes to play & watch several sports including football and basket, so you can talk about the last match or even ask for a pachanga if you're nearby, preferably in the outside as he enjoys being surrounded by nature.
+
+And to finish, have you ever thought on parenthood? If you have any doubts about it, I want to highlight how an amazing father he is, having a little daughter he worries to give her  an informed education, quality time and on top of that love.
+
+Seems like a keeper, right? Please don't wait! Hurry now before all Diego's coffee calendar slots are booked!
