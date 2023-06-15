@@ -34,7 +34,7 @@ Please remember, the adventures of Sherlock Holmes, you are not going to regret 
 
 ## Task 3: Convice us to... Invite my partner for a coffe (live):
 
-Hello friends, let me ask you something, Since working remotely have you been feeling more isolated? Somewhat disconnected from most of the people you work with? If its a yes, you're not alone, what otherwise were pleasant moments of connection between pairs when grabbing a coffe, having small talk in a corridor or in the lunch time are now moments of solitude in your room.
+Hello friends, let me ask you something, Since working remotely have you been feeling more lonely? isolated? Somewhat disconnected from most of the people you work with? If its a yes, you're not alone, what otherwise were pleasant moments of connection between pairs when grabbing a coffe, having small talk in a corridor or in the lunch time are now moments of solitude in your room.
 
 The problem is that we are often too shy, or too worried to bother someone with an spontaneus virtual conversation, But I've come here with a solution for it, a solution that has name, the name is Diego and I want you to schedule a virtual cofee with him.
 
