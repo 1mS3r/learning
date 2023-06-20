@@ -56,3 +56,31 @@ Something to keep audience interested, done at the start and returned to it at t
 
 #### Ted Talk 2011 Example: 3 Things I learned when my plane crashed
 ![Arrangment Example](img/arrangementExample.png)
+
+### Style
+
+#### High / Grand
+
+For moments of National tragedy/motivation or to do a in-crescendo in an important discourse, it uses metaphors, elaborate language, rethorical devices, can be used at the conclusion and call-to-action in a speech.
+Example: Martin Luther King
+
+#### Low / Plain
+
+Clarity, brevity, effect of sincerity, good for explaining benefits. Based on create a trust with the audience, you're one of them.
+Example: Steve Jobs
+
+### Memory
+
+This is a key point to work in to address a speech in a more natural way, there are some mechanism to help up with it.
+
+#### Memory Palaces
+
+Mental construction in which you interiorize some place, such as your home, with vivid detail and stop points, and then associate an item to each of the points so its easy to come back later to it, easing to remember.
+
+#### Mnemonics
+
+Pattern of letters and ideas used to remember something more complex.
+There are several types: rhymes, acronyms, order... 
+- For example: `In fourteen hundred ninety-two,
+Columbus sailed the ocean blue.`
+
