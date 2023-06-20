@@ -81,6 +81,13 @@ Mental construction in which you interiorize some place, such as your home, with
 
 Pattern of letters and ideas used to remember something more complex.
 There are several types: rhymes, acronyms, order... 
-- For example: `In fourteen hundred ninety-two,
+- For example (rhyme): `In fourteen hundred ninety-two,
 Columbus sailed the ocean blue.`
 
+#### Learning Rote
+
+Brute force method of repetition, it improves it done in front of someone or using a mirror.#### Using Notes
+
+#### Using Notes
+
+Having some notes with key words of points of your speech to gain confidence of in case of emergency, but the idea is not to use them.
