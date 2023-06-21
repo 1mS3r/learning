@@ -47,3 +47,14 @@ I will continue with some of his hobbies, as an sportive person he likes to play
 And to finish, have you ever thought on parenthood? If you have any doubts about it, I want to highlight how an amazing father he is, having a little daughter he worries to give her an informed education, quality time and on top of that love.
 
 Seems like a keeper, right? Please don't wait! Hurry now before all Diego's coffee calendar slots are booked!
+
+## Task 4: Business Speech... The importance of quality:
+
+Good morning, have you ever had to deal with stress? with burnout? with an oppresive, asphyxiant and drowning work environment?
+
+Thank you for joining me today as we discuss a topic close to my heart whose lack is what causes the situations previously described, I'm talking about quality, and I want to make sure you understand it's importance.
+
+Let me start assesing What is quality? 
+- Quality is excellence, the continuos improvement mindset focused on delivering the best effort that we're capable of.
+- Quality is team play, is not a singular effort but the collective commitment of each team member.
+- Quality is 
