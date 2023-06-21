@@ -91,3 +91,28 @@ Brute force method of repetition, it improves it done in front of someone or usi
 #### Using Notes
 
 Having some notes with key words of points of your speech to gain confidence of in case of emergency, but the idea is not to use them.
+
+### Delivery
+
+Last stage of the speech preparation, the moment were the previous work is put into use.
+
+We should deal with:
+
+- Fear: Normal anxiety coded into our genes, prevents to feel what we're gonna say.
+
+To combat such fear, we count with 2 mechanisms:
+
+- Relaxation: Exercises that work for you to start focused (mindfulness, vocal exercies, yoga,...)
+- Practise: The more you practise the more familiar you'll be and less nervous.
+
+Alsovery important to:
+
+- Accept that you can not change reactions/behaviours of the people.
+- Contribution is the main objetive of your speech, you're there to help the audience.
+
+Finally pay attention to details:
+
+- Speed: 110 - 130 words/min
+- Voice: Clear, vary the pith and speed to avoid monotony, use pauses
+- Bode Language: Just be natural, no exagerations
+- Dress: Appropiate for each ocassion, same as the audience with a littler further touch
