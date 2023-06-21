@@ -57,4 +57,15 @@ Thank you for joining me today as we discuss a topic close to my heart whose lac
 Let me start assesing What is quality? 
 - Quality is excellence, the continuos improvement mindset focused on delivering the best effort that we're capable of.
 - Quality is team play, is not a singular effort but the collective commitment of each team member.
-- Quality is 
+- Quality is patience, as it's not an sprint but a marathon.
+
+However, it is not enough with simply assembling a group of talented individuals, the own organization must embrace the quality path by fostering an environment of trust, respect and open communication. It is through this elements that quality emerges when different perspectives converge, challenges are overcome and innovation thrives.
+
+Furthermore, a work team empowered by the organization and driven by quality would take feedback received not as a sword of blame, but as an opportunity for growth by analizing their processes, identifying ineficiencies and seeking innovative solutions.
+
+Finally, the impact of quality is not a one day flower, it extends through time bringing customer satisfaction, loyalty and stability and the best of it is that all of those elements are shared by the own workforce.
+
+In conclusion, dear colleagues, although complex to measure, quality is an aspiration, a principle that allows teams to be fueled with passion, innovation and a deep sense of pride.
+And the lack of it can be tempting to achieve faster short-term goals but you would be only looking at the present at the expense of your future.
+Togheter, we can invest in quality, we can invest in greatness, we can invest in us.
+
