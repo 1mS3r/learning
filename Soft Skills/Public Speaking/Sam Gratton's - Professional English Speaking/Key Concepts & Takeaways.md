@@ -116,3 +116,20 @@ Finally pay attention to details:
 - Voice: Clear, vary the pith and speed to avoid monotony, use pauses
 - Bode Language: Just be natural, no exagerations
 - Dress: Appropiate for each ocassion, same as the audience with a littler further touch
+
+
+## Clear Communication
+
+### Clarity
+
+The meaning of the words said during a business meeting and it's interpretation vary from one culture to other, we can classify it as:
+
+- Low Context: Explicit, Clear, Repetitive, such as Americans/Germans
+- High Context: Implicit, Subtle & with lots of layers of meaning, such as Japan, Arabia
+
+In a remote context it's better the Low Context approach, going straight to the point and providing the most clear possible approach.
+
+### Personal Branding
+
+We should be in control of what appears when someone looks for us over internet.
+Build a personal brand that makes a positive impact on people is key in the professional world.
