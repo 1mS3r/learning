@@ -2,6 +2,7 @@
 
 ## Task 1: What can you tell me about yourself?
 
+```asciidoc
 Hi, my name is Sergio, I'm a Computer Sciences Engineer, with over a decade working in tech industry starting in technical support
 and eventually transitioning to a backend engineer role.
 
@@ -10,6 +11,7 @@ I'm passionate about books, films, videogames and food, but dont have much time 
 I've a little daughter, a cat and recently a puppy so... you can bet I'm entertained enough.
 
 As an experienced backend engineer I can support any company willing to develop new software or improve and maintain existing one by working on the digital engines of the product, which can not be seen but allow the project to live.
+```
 
 ## Task 2: Convince us to... read your favorite book (recorded): 
  - Define your objective: Get the audience read the book / Put it on top of their backlog
@@ -34,6 +36,7 @@ Please remember, the adventures of Sherlock Holmes, you are not going to regret 
 
 ## Task 3: Convice us to... Invite my partner for a coffe (live):
 
+```asciidoc
 Hello friends, let me ask you something, Since working remotely have you been feeling more lonely? isolated? Somewhat disconnected from most of the people you work with? If its a yes, you're not alone, what otherwise were pleasant moments of connection between pairs when grabbing a coffe, having small talk in a corridor or in the lunch time are now moments of solitude in your room.
 
 The problem is that we are often too shy, or too worried to bother someone with an spontaneus virtual conversation, But I've come here with a solution for it, a solution that has name, the name is Diego and I want you to schedule a virtual cofee with him.
@@ -47,9 +50,11 @@ I will continue with some of his hobbies, as an sportive person he likes to play
 And to finish, have you ever thought on parenthood? If you have any doubts about it, I want to highlight how an amazing father he is, having a little daughter he worries to give her an informed education, quality time and on top of that love.
 
 Seems like a keeper, right? Please don't wait! Hurry now before all Diego's coffee calendar slots are booked!
+```
 
 ## Task 4: Business Speech... The importance of quality:
 
+```asciidoc
 Good morning, have you ever had to deal with stress? with burnout? with an oppresive, asphyxiant and drowning work environment?
 
 Thank you for joining me today as we discuss a topic close to my heart whose lack is what causes the situations previously described, I'm talking about quality, and I want to make sure you understand it's importance.
@@ -68,6 +73,7 @@ Finally, the impact of quality is not a one day flower, it extends through time 
 In conclusion, dear colleagues, although complex to measure, quality is an aspiration, a principle that allows teams to be fueled with passion, innovation and a deep sense of pride.
 And the lack of it can be tempting to achieve faster short-term goals but you would be only looking at the present at the expense of your future.
 Togheter, we can invest in quality, we can invest in greatness, we can invest in us.
+```
 
 **Feedback**: Try to show a bit more of me at the start as a hook, or connect it better with the conclusion
 
