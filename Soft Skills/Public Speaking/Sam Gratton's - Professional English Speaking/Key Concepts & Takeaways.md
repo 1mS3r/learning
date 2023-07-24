@@ -1,6 +1,19 @@
 # Sam Gratton's - English Communication Skills Course Takeaways
 
-## 
+## Theory of Public Speaking
+
+Born in the ancient times with the purpose of communicating more effective, improving your influence and the understanding of your speech.
+The final objetive is get people to: 
+- Listen
+- Remember
+- Act
+### History of Public Speaking
+
+- Aristotle: The art of rethoric
+- Cicero: On the Orator
+- Quintilian: Institutes of Oratory
+
+These are the most distinguised figures regarindg oratory, this discipline decline with the introduction of the Press, being displaced by the writers.
 
 ## The Five Parts of Rethoric
 
