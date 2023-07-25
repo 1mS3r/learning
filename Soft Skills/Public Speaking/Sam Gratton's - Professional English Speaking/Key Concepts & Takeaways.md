@@ -7,9 +7,14 @@ The final objetive is get people to:
 - Listen
 - Remember
 - Act
+  
 ### History of Public Speaking
 
 - Aristotle: The art of rethoric
+Stated that there were 3 devices that should appear on every speech
+  - Logos: Appeals to the Mind, evidence, data, expertise on the field
+  - Pathos: Appeals to the Body, connect emotionally with the audience, show & trigger passion, love or any other emotion that suits the speech
+  - Ethos: Appelas to the Soul, the ethics & moral, develop the trust and faith of people for you, leaving your ego aside and doing the speech to improve audience life.
 - Cicero: On the Orator
 - Quintilian: Institutes of Oratory
 
