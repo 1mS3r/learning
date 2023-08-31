@@ -22,7 +22,23 @@ Try to keep the teams following the 2 pizza rule ([copied of Jeff Bezo's](https:
 
 #### Team Topologies
 
-dasd
+![Team Topologies](img/sw-team-topologies.png)
+
+#### Stream Aligned Team
+
+![Stream Aligned Team](img/sw-stream-team.png)
+
+#### Enabling Team
+
+![Enabling Team](img/sw-enablingg-team.png)
+
+#### Platform Team
+
+![Platform Team](img/sw-platform-team.png)
+
+#### Subsystem Team
+
+![Subsystem Team](img/sw-subsystem-team.png)
 
 ## Vector Search
 
@@ -34,6 +50,22 @@ The best approach from a findability/relevancy perspective is to add the particu
 
 - Sum of scores: Cosine Similarity + BM25
 - RRF (Reciprocal Rank Fusion): 1/k+rank(keyword)
+
+
+### Query Relaxation
+
+Strategy followed to deal with No Results.
+
+Usually we rely on:
+
+- Synonyms
+- Spellcheck
+- Search in low quality fields i.e `description`
+- Show related queries
+
+The proposal is to find the best combination from the query input by the user to keep him engaged.
+
+The conclusion after experimentation is to use a Multilayer Neural Network with Word2Vec but also to keep this as a recommendation that should be properly communicated to the user.
 
 ## Querqy Library
 
