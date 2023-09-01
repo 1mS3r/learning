@@ -30,7 +30,7 @@ Try to keep the teams following the 2 pizza rule ([copied of Jeff Bezo's](https:
 
 #### Enabling Team
 
-![Enabling Team](img/sw-enablingg-team.png)
+![Enabling Team](img/sw-enabling-team.png)
 
 #### Platform Team
 
