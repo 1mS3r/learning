@@ -52,13 +52,15 @@ The best approach from a findability/relevancy perspective is to add the particu
 - RRF (Reciprocal Rank Fusion): 1/k+rank(keyword)
 
 
-### Query Relaxation
+## Query Relaxation
 
 Strategy followed to deal with No Results.
 
 Usually we rely on:
 
 - Synonyms
+- Stemming
+- Orthograpihc normalization
 - Spellcheck
 - Search in low quality fields i.e `description`
 - Show related queries
@@ -70,4 +72,30 @@ The conclusion after experimentation is to use a Multilayer Neural Network with 
 ## Querqy Library
 
 Library for query rewriting available in several search systems such as: opensearch, elasticsearch, Solr, ...
+
+### How it works
+
+![Querqy Diagram](img/querqy-diagram.png)
+
+### Included Capabilities via Rewriters
+
+- Common rules: mobile -> mobile OR smartphone
+- Replace: ombile -> mobile
+- Number-Unit -> Laptop 15" -> laptop AND screen_size:[13.5 TO 16.5]
+- Shingle: i phone -> (i phone OR iphone)
+- Word Break -> grainfree -> (grainfree OR grain free)
+  - Handles as well composing/decomposing German terms: arbeitsjacke -> arbeit jacke
+
+### Customization
+
+When working with others such as Lucene we can set custom rewrites such as:
+- new* -> new
+- new -> release_date:[Now-4Days TO Now+1Day]
+- + -> plus
+- *) -> $1 (whitespace)
+- (* -> $1 (2018) -> 2018
+
+### What it wants to achieve?
+
+![Querqy Target](querqy-target.png)
 
