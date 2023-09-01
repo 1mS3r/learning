@@ -97,7 +97,7 @@ When working with others such as Lucene we can set custom rewrites such as:
 
 ### What it wants to achieve?
 
-![Querqy Target](querqy-target.png)
+![Querqy Target](img/querqy-target.png)
 
 #### Elastic Search Query
 
