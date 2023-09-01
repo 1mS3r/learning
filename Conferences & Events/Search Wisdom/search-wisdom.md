@@ -99,3 +99,10 @@ When working with others such as Lucene we can set custom rewrites such as:
 
 ![Querqy Target](querqy-target.png)
 
+#### Elastic Search Query
+
+![Querqy Elastic](img/querqy-elastic.png)
+
+#### Querqy Query for Elasticsearch
+
+![Querqy Query ES](img/querqy-querqy-es.png)
