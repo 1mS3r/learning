@@ -151,14 +151,18 @@ We can retrieve the commits made for each developer, the date, the files involve
   - Enclosure diagram: size of files plus most edited files or File ownership, which shows who is the one with more changes in a file
   - Change Coupling: Relation between files in the same commits
 
-### Psicology of Code smells
+### Psicology of Code
 
 The different code smells we work to fix have an origin in our own human limitations:
 - Short/ work & long place memory, we simply don't have the capacity to work properly with the code if it is not adapted to our capacities
 
+- Onboarding, dont assume the knowledge of the other people
+  - Avoid tasks with several stepps of uncertainty: What to change, where to change, how to change, implications...
+  - Useful: Take an abstract concept -> go to code to show it -> return to abstract concept and explain other uses
+
 ### Resource 
 
-Adam ? - Free graph tool for Open Source project
+Adam Tornhill - Free graph tool for Open Source project
 
 ### Other Notes
 
