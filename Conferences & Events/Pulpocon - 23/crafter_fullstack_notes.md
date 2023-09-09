@@ -20,8 +20,44 @@ In the testing part the proposes are esentially aligned with what we are doing a
 - Esentially the proposes are the same that we follow nowadays.
 
 
-## 
+## Adventurers! To the Train!: The way to go to the data train - Data Driven Orientation
 
+- What's the objetive? -> Generate a good hypothesis
+  - Segment Users
+  - Impact to achieve
+  - Effect of our change
+  - Logic that follows previous points
+  - Metric to measure
+
+- Define good metrics
+  - Comparable: At differents levels, segment users, time period, etc...
+  - Understandable: People should be able to discuss about it
+  - Behaviour change: What are you going to do if the metric changes
+
+- Data Gathering Quality
+  - Establish which data is relevant to avoid having full logs without any meaning
+- 
+- Experiment before launch
+  - Perform several tests: A/B, etc.. to check validity of data aproximation
+- 
+- Be one with the data
+  - Data are not owned by Data team but by ALL the teams
+
+## Vamos a llevarnos bien, porque sino van a haber hondonadas de hostias aqui, eh!
+
+This talk is about Empathy, not false Empathy but real one.
+As we are the experts in our area when communicating with a customer, we should have present that there would be a difference in knowledge, that the other part can be nervous and that just our presente works as a balsame, foucs on calls if needed.
+
+- 5 Whys
+  - To question why something fail and then why the explanation of that to try to reach root cause
+- Dissapooint Early
+  - If something feels like a bad idea, say no quick, there is time later to rectify but other way around if more difficult.
+
+### Reading Recommendation
+
+Rompe la barrera del no - Chris Voss
+
+Several techniques to create understanding: Argument summary, last words repetition, ...
 
 ### Other Notes
 
