@@ -135,7 +135,30 @@ Treat all your code as if it were legacy
 - Code smell
 - Automatic Refactors: Rename, extract variables, inline variable, etc...
 
+### Characterization Testing
 
+https://en.wikipedia.org/wiki/Characterization_test
+
+## Data you don't know you have and how to use it
+
+The mix of psicology and code programming can be taken advantage of -> Behavioural code analysis: How are we interacting with the code?
+
+### GIT / Cloc / CodeMaat
+
+We can retrieve the commits made for each developer, the date, the files involved, ...
+
+- Understand the repo: 
+  - Enclosure diagram: size of files plus most edited files or File ownership, which shows who is the one with more changes in a file
+  - Change Coupling: Relation between files in the same commits
+
+### Psicology of Code smells
+
+The different code smells we work to fix have an origin in our own human limitations:
+- Short/ work & long place memory, we simply don't have the capacity to work properly with the code if it is not adapted to our capacities
+
+### Resource 
+
+Adam ? - Free graph tool for Open Source project
 
 ### Other Notes
 
