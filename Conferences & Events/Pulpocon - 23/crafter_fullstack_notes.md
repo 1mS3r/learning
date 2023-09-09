@@ -63,6 +63,54 @@ Rompe la barrera del no - Chris Voss
 
 Several techniques to create understanding: Argument summary, last words repetition, ...
 
+## From programming to develop
+
+Nowadays there are several people that change its carrer path and ends in our field, so, what is our field?
+
+### Artisany
+- Well built software
+- Deliver value
+- Professional communities
+- Productive associations
+
+The value in an artisan product is the skill provided when doing the product, lots of times building products which are unique or different from other that fulfills the same purpose.
+
+Another hot point is how the responsibility to transmit our knowledge to new members of the community.
+
+### Design:
+- Pass all tests
+- Clear code, consistent & expressive
+- Avoids duplicity
+- Minimum code needed
+
+### Empathy
+
+The purpose, what is the improvement we are going to achieve when doing X task in the life of others?
+
+### Recommended Reading
+
+[10 principios de diseño de Dieter Rams](https://hipertextual.com/2015/01/los-principios-del-buen-diseno-dieter-rams)
+[Refactoring](https://www.goodreads.com/book/show/44936.Refactoring?ac=1&from_search=true&qid=sCpLuWGvnq&rank=1)
+[Software Economics](https://www.goodreads.com/book/show/59770603-software-economics-una-gu-a-de-estudio)
+
+### Tests
+
+Code with tests is not QA.
+
+- TDD Recommendation
+- Especify using examples
+
+### Refactoring
+
+Treat all your code as if it were legacy
+
+#### When to refactor?
+- Previous: Code with later refactor in mind os it is easy to modify things.
+- Now: Do the change at the moment if its easy
+- Later: Modify the code next times so later times are easier to change.
+
+`Adding new features  is important, but refactor the code to allow adding them easily is as important`
+
 ### Sensible Customer Meetings
 - Establish expectatives beforehand
 - Communication with our team mates over customer: Customers come and go, team mates no
