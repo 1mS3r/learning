@@ -119,6 +119,24 @@ Treat all your code as if it were legacy
 
 `Adding new features  is important, but refactor the code to allow adding them easily is as important`
 
+
+## Working with Legacy code
+
+### Sprout method
+
+- Extract the new method/feature to add to legacy code in a new method and then add it to the old code
+
+### Wrap method
+
+- Extract all the old code in a new method, create the method with new logic and mix them in the main method.
+
+### What to look at?
+- Code Churn
+- Code smell
+- Automatic Refactors: Rename, extract variables, inline variable, etc...
+
+
+
 ### Other Notes
 
 - Scaffolding Testing:
