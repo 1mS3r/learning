@@ -53,11 +53,23 @@ As we are the experts in our area when communicating with a customer, we should 
 - Dissapooint Early
   - If something feels like a bad idea, say no quick, there is time later to rectify but other way around if more difficult.
 
+## Integration first: Building a service with 3rd party integration
+
+After several bad experiences, the development team decided to prioritise the integration with the 3rd party service in their project and, when that is secured, perform several little steps of iteration until project is done, this way avoids last minute integration failures that are painful and unexpècted.
+
 ### Reading Recommendation
 
 Rompe la barrera del no - Chris Voss
 
 Several techniques to create understanding: Argument summary, last words repetition, ...
+
+### Sensible Customer Meetings
+- Establish expectatives beforehand
+- Communication with our team mates over customer: Customers come and go, team mates no
+- Dont understimate other feelings, even if it feel ilogical or disproportionate
+- Dont let an irrelevant discussion deviate you from the original point
+- Be honest with customer assuming responsibility
+- User the language properly
 
 ### Other Notes
 
