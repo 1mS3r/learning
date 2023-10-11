@@ -17,9 +17,75 @@ Kubernetes is:
 
 > an open-source system for automating deployment, scaling, and management of containerized applications
 
-In its simplest form, Kubernetes is made of one or more central managers (aka masters) and worker nodes. The manager runs an API server, a scheduler, various operators and a datastore to keep the state of the cluster, container settings, and the networking configuration.
+In its simplest form, Kubernetes is made of one or more __central managers__ (aka masters) and worker nodes. The manager runs an API server, a scheduler, various operators and a datastore to keep the state of the cluster, container settings, and the networking configuration.
 
 ![Kubernetes Architecture Diagram](img/architecture-diagram.png)
 
-Kubernetes exposes an API via the API server: you can communicate with the API using a local client called kubectl. The kube-scheduler sees the API requests for running a new container and finds a suitable node to run that container. Each node in the cluster runs two components: kubelet and kube-proxy. The kubelet systemd service receives spec information for container configuration, downloads and manages any necessary resources and works with the container engine on the local node to ensure the container runs or is restarted upon failure. The kube-proxy pod creates and manages local firewall rules and networking configuration to expose containers on the network.
+Kubernetes exposes an API via the __API server__: you can communicate with the API using a local client called kubectl. The __kube-scheduler__ sees the API requests for running a new container and finds a suitable node to run that container. Each node in the cluster runs two components: kubelet and kube-proxy. The __kubelet__ systemd service receives spec information for container configuration, downloads and manages any necessary resources and works with the container engine on the local node to ensure the container runs or is restarted upon failure. The __kube-proxy__ pod creates and manages local firewall rules and networking configuration to expose containers on the network.
 
+### Network
+
+A Pod represents a group of co-located containers with some associated data volumes. All containers in a Pod share the same network namespace.
+
+![Pod single IP topology](img/pod-network.png)
+
+![General Network topology](general-networking.png)
+
+#### CNI Network Configuration File
+
+CNI is an emerging specification with associated libraries to write plugins that configure container networking and remove allocated resources when the container is deleted.
+
+Example:
+```json
+{
+   "cniVersion": "0.2.0",
+   "name": "mynet",
+   "type": "bridge",
+   "bridge": "cni0",
+   "isGateway": true,
+   "ipMasq": true,
+   "ipam": {
+       "type": "host-local",
+       "subnet": "10.22.0.0/16",
+       "routes": [
+           { "dst": "0.0.0.0/0" }
+            ]
+   }
+}
+```
+
+
+## Glossary
+
+__container__
+
+A container is a ready-to-run software package containing everything needed to run an application: the code and any runtime it requires, application and system libraries, and default values for any essential settings.
+
+__pod__
+
+Pods are the smallest deployable units of computing that you can create and manage in Kubernetes.
+A Pod (as in a pod of whales or pea pod) is a group of one or more containers, with shared storage and network resources, and a specification for how to run the containers.
+
+__namespace__
+
+A segregation of resources, upon which resource quotas and permissions can be applied. Kubernetes objects may be created in a namespace or cluster-scoped. Users can be limited by the object verbs allowed per namespace. Also the LimitRange admission controller constrains resource usage in that namespace. Two objects cannot have the same Name: value in the same namespace.
+
+__context__
+
+A combination of user, cluster name and namespace. A convenient way to switch between combinations of permissions and restrictions. For example you may have a development cluster and a production cluster, or may be part of both the operations and architecture namespaces. This information is referenced from ~/.kube/config.
+
+__Resource Limits__
+
+A way to limit the amount of resources consumed by a pod, or to request a minimum amount of resources reserved, but not necessarily consumed, by a pod. Limits can also be set per-namespaces, which have priority over those in the PodSpec.
+
+__Pod Security Policies__
+
+Deprecated. Was a policy to limit the ability of pods to elevate permissions or modify the node upon which they are scheduled. This wide-ranging limitation may prevent a pod from operating properly. This was replaced with Pod Security Admission. Some have gone towards Open Policy Agent, or other tools instead.
+
+__Pod Security Admission__
+
+A beta feature to restrict pod behavior in an easy-to-implement and easy-to-understand manner, applied at the namespace level when a pod is created. These will leverage three profiles: Privileged, Baseline, and Restricted policies.
+
+__Network Policies__
+
+The ability to have an inside-the-cluster firewall. Ingress and Egress traffic can be limited according to namespaces and labels as well as typical network traffic characteristics.
