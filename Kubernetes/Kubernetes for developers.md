@@ -152,4 +152,36 @@ Package manager for Kubernetes, uses one or more YAML files to describe 1 or mor
 - Decoupling: Ability to isolate each service and ease connection between them.
 - Transience: Ability to terminate any component of the system and start up a new one with a different, or not, version in any moment.
 - Flexible framework: Instead of a monolithic component, each of the components can be divided into multiple instances of that component, several Search Services for instance, to allow workload distribution.
-- 
+
+## Deployment Configuration
+
+### Volumes
+
+A pod specification can declare 1 or more volumes and where they are available.
+Each requires: name, type and mount point.
+
+For data adquired to be available to other cotainers we would need a **PersistentVolumeClaim(pvc)**, which can has several permissions over it: RWO, ROX, RWX where X stands for **Many**
+
+#### YAML Spec
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+    name: busybox
+    namespace: default
+spec:
+    containers:
+    - image: busybox
+      name: busy
+      command:
+        - sleep
+        - "3600"
+      volumeMounts:
+      - mountPath: /scratch
+        name: scratch-volume
+    volumes:
+    - name: scratch-volume
+            emptyDir: {}
+```
+
+#### Volumes Types
