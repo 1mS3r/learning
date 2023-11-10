@@ -144,4 +144,12 @@ To see the events & the app logs of the pod.
 
 ### Helm
 
-Package manager for Kubernetes, uses one or more YAML files to describe 1 or more objects 
+Package manager for Kubernetes, uses one or more YAML files to describe 1 or more objects and allow them to be easily deployed in the cluster.
+
+## Design for Kubernetes
+
+### Characteristics
+- Decoupling: Ability to isolate each service and ease connection between them.
+- Transience: Ability to terminate any component of the system and start up a new one with a different, or not, version in any moment.
+- Flexible framework: Instead of a monolithic component, each of the components can be divided into multiple instances of that component, several Search Services for instance, to allow workload distribution.
+- 
