@@ -162,7 +162,7 @@ Each requires: name, type and mount point.
 
 For data adquired to be available to other cotainers we would need a **PersistentVolumeClaim(pvc)**, which can has several permissions over it: RWO, ROX, RWX where X stands for **Many**
 
-#### YAML Spec
+#### YAML Spec Empty Vol
 ```yaml
 apiVersion: v1
 kind: Pod
@@ -184,4 +184,141 @@ spec:
             emptyDir: {}
 ```
 
-#### Volumes Types
+#### YAML Spec Shared Volume
+```yaml
+   containers:
+   - name: alphacont
+     image: busybox
+     volumeMounts:
+     - mountPath: /alphadir
+       name: sharevol
+   - name: betacont
+     image: busybox
+     volumeMounts:
+     - mountPath: /betadir
+       name: sharevol
+   volumes:
+   - name: sharevol
+     emptyDir: {} 
+```
+
+#### YAML Spec Persistent Volume
+```yaml
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+name: 10Gpv01
+labels:
+type: local
+spec:
+capacity:
+        storage: 10Gi
+    accessModes:
+        - ReadWriteOnce
+    hostPath:
+        path: "/somepath/data01"
+```
+
+#### YAML Spec Persistent Volume Claim
+```yaml
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+    name: myclaim
+spec:
+    accessModes:
+        - ReadWriteOnce
+    resources:
+        requests:
+                storage: 8GI
+(In the Pod)
+....
+spec:
+    containers:
+....
+    volumes:
+        - name: test-volume
+          persistentVolumeClaim:
+                claimName: myclaim
+```
+
+### Secrets
+
+Secrets are meant to encode sensitive data/passwords on a YAML file, by defaults they use **base64**. 
+
+Can be encrypted on top of the encoding using an EncryptionConfiguration object.
+
+```bash
+$ kubectl create secret generic --help
+$ kubectl create secret generic mysql --from-literal=password=root
+```
+
+```yaml
+spec:
+    containers:
+    - image: mysql:5.5
+      name: mysql
+      env:
+      - name: MYSQL_ROOT_PASSWORD
+        valueFrom:
+          secretKeyRef:
+            name: mysql
+            key: password
+```
+
+The encoded password can also be encrypted using
+
+### Config Maps
+
+A similar API resource to Secrets is the ConfigMap, except the data is not encoded. In keeping with the concept of decoupling in Kubernetes, using a ConfigMap decouples a container image from configuration artifacts.
+
+**Uses:**
+
+- Pod environmental variables from single or multiple ConfigMaps
+- Use ConfigMap values in Pod commands
+- Populate Volume from ConfigMap
+- Add ConfigMap data to specific path in Volume
+- Set file names and access mode in Volume from ConfigMap data
+- Can be used by system components and controllers.
+
+#### ConfigMap Definition and Use on YAML
+
+```yaml
+kind: ConfigMap
+apiVersion: v1
+metadata: 
+    name: foobar
+data:
+    config.js: |
+        {
+```
+
+```yaml
+...
+
+env:
+- name: SPECIAL_LEVEL_KEY
+  valueFrom:
+    configMapKeyRef:
+      name: special-config
+      key: special.how
+...
+
+volumes:
+  - name: config-volume
+    configMap:
+      name: special-config
+...
+
+```
+### Scaling & Rolling Updates
+
+Most values can be updated on a configuration, a usual one is to change the number of replicas running.
+Zero means no containers, otherwise you can adjust it with:
+
+```bash
+$ kubectl scale deploy/dev-web --replicas=4
+deployment "dev-web" scaled
+```
+
+If an update is made to, for example, the version of the app to deploy, a rolling update will be triggered.
