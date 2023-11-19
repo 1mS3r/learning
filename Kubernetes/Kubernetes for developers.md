@@ -322,3 +322,120 @@ deployment "dev-web" scaled
 ```
 
 If an update is made to, for example, the version of the app to deploy, a rolling update will be triggered.
+
+## Security
+
+Kubernetes has a layer of [authorization to its API](https://kubernetes.io/docs/reference/access-authn-authz/controlling-access/), which is needed to perform any action in the cluster.
+
+![Kubernetes API Security](img/security-overview.png)
+
+Once a request reaches the API server securely, it will first go through any authentication module that has been configured. The request can be rejected if authentication fails or it gets authenticated and passed to the authorization step.
+
+At the authorization step, the request will be checked against existing policies. It will be authorized if the user has the permissions to perform the requested actions. Then, the requests will go through the last step of admission controllers. In general, admission controllers will check the actual content of the objects being created and validate them before admitting the request.
+
+**Authorization Policy Example**
+
+```json
+{
+    "apiVersion": "abac.authorization.kubernetes.io/v1beta1",
+    "kind": "Policy",
+    "spec": {
+        "user": "bob",
+        "namespace": "projectCaribou",
+        "resource": "pods",
+        "readonly": true
+    }
+}
+```
+
+### Pod Security
+
+There are 3 policies intended for a Pod:
+
+- [Privileged](https://kubernetes.io/docs/concepts/security/pod-security-standards/#privileged): No restrictions
+
+```yaml
+apiVersion: v1
+kind: Namespace
+metadata: 
+  name: no-restrictions-namespace
+  labels:
+    pod-security.kubernetes.io/enforce: privileged
+    pod-security.kubernetes.io/enforce-version: latest
+```
+
+- [Baseline](https://kubernetes.io/docs/concepts/security/pod-security-standards/#baseline): Minimal resitrictions, not allows privilege scalations
+
+```yaml
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: baseline-namespace
+  labels:
+    pod-security.kubernetes.io/enforce: baseline
+    pod-security.kubernetes.io/enforce-version: latest
+    pod-security.kubernetes.io/warn: baseline
+    pod-security.kubernetes.io/warn-version: latest
+```
+
+- [Restricted](https://kubernetes.io/docs/concepts/security/pod-security-standards/#restricted): Most restrictivve, recommended to follow best practises.
+
+```yaml
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: my-restricted-namespace
+  labels:
+    pod-security.kubernetes.io/enforce: restricted
+    pod-security.kubernetes.io/enforce-version: latest
+    pod-security.kubernetes.io/warn: restricted
+    pod-security.kubernetes.io/warn-version: latest
+```
+
+### Network Security Policy
+
+By default, all pods can reach each other all ingress and egress traffic is allowed.Nowadays Kubernetes support the restriction of traffic between pods.
+This is done by adding a *NetworkPolicy* the spec of the policy can include a *podSelector* to narrow which pods are affected.
+
+```yaml
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: ingress-egress-policy
+  namespace: default
+spec:
+  podSelector:
+    matchLabels:
+      role: db
+  policyTypes:
+    - Ingress
+    - Egress
+  ingress:
+    - from:
+        - ipBlock:
+            cidr: 172.17.0.0/16
+            except:
+              - 172.17.1.0/24
+        - namespaceSelector:
+            matchLabels:
+              project: myproject
+        - podSelector:
+            matchLabels:
+              role: frontend
+      ports:
+        - protocol: TCP
+          port: 6379
+  egress:
+    - to:
+        - ipBlock:
+            cidr: 10.0.0.0/24
+      ports:
+        - protocol: TCP
+          port: 5978
+```
+
+### Service Accounts
+
+For Kubernetes access a user or application can be authorized by a nominative username/password or by using a [Service Account](https://kubernetes.io/docs/concepts/security/service-accounts/) which is a non-human account.
+
+For a in-depth explanation of how to use and implement it we can rely on [official Kubernetes doc](https://kubernetes.io/docs/tasks/configure-pod-container/.configure-service-account/)
