@@ -439,3 +439,77 @@ spec:
 For Kubernetes access a user or application can be authorized by a nominative username/password or by using a [Service Account](https://kubernetes.io/docs/concepts/security/service-accounts/) which is a non-human account.
 
 For a in-depth explanation of how to use and implement it we can rely on [official Kubernetes doc](https://kubernetes.io/docs/tasks/configure-pod-container/.configure-service-account/)
+
+
+## Exposing Applications
+
+Default traffic mode now is **iptables**.
+
+![Traffic fron CluterIP to Pod](img/kube-proxy.png)
+
+In the iptables proxy mode, kube-proxy continues to monitor the API server for changes in Service and Endpoint objects, and updates rules for each object when created or removed. One limitation to the new mode is an inability to connect to a Pod should the original request fail, so it uses a Readiness Probe to ensure all containers are functional prior to connection.
+
+### Service Types
+
+#### ClusterIP
+
+For inter-cluster communication, frontends talking to backends can use ClusterIPs. These addresses and endpoints only work within the cluster. It's the default
+
+```yaml
+spec:
+  clusterIP: 10.108.95.67
+  ports:
+  - name: "443"
+    port: 443
+    protocol: TCP
+    targetPort: 443
+```
+
+#### NodePort
+
+NodePort is a simple connection from a high-port routed to a ClusterIP using iptables, or ipvs in newer versions. The creation of a NodePort generates a ClusterIP by default. Traffic is routed from the NodePort to the ClusterIP.
+
+```yaml
+spec:
+  clusterIP: 10.97.191.46
+  externalTrafficPolicy: Cluster
+  ports:
+  - nodePort: 31070
+    port: 80
+    protocol: TCP
+    targetPort: 800a0
+  selector:
+    io.kompose.service: nginx
+  sessionAffinity: None
+  type: NodePort
+```
+
+#### LoadBalancer
+
+Creating a LoadBalancer service generates a NodePort, which then creates a ClusterIP. It also sends an asynchronous call to an external load balancer, typically supplied by a cloud provider.
+
+```yaml
+Type: LoadBalancer
+loadBalancerIP: 12.45.105.12
+clusterIP: 10.5.31.33
+ports:
+- protocol: TCP
+  Port: 80
+```
+
+#### ExternalName
+
+The use of an ExternalName service, which is a special type of service without selectors, is to point to an external DNS server. 
+
+```yaml
+spec:
+  Type: ExternalName
+  externalName: ext.db.example.com
+```
+### Ingress
+
+The use of an ingress controller manages ingress rules to route traffic to existing services. Ingress can be used for fan out to services, name-based hosting, TLS, or load balancing.
+
+There are several ingress controllers such as nginx used everywhere, and GCE embedded into a cloud provider. Traefik (pronounced "traffic") and HAProxy are in common use, as well.
+
+![Ingress Controller & Muliple Nodeports](ingress.png)
