@@ -512,4 +512,29 @@ The use of an ingress controller manages ingress rules to route traffic to exist
 
 There are several ingress controllers such as nginx used everywhere, and GCE embedded into a cloud provider. Traefik (pronounced "traffic") and HAProxy are in common use, as well.
 
-![Ingress Controller & Muliple Nodeports](ingress.png)
+![Ingress Controller & Muliple Nodeports](img/ingress.png)
+
+## Troubleshooting
+
+Start by using the logs of the deployed pods if available:
+
+```bash
+kubectl logs pod-name
+```
+
+The issues found with a decoupled system like Kubernetes are similar to those of a traditional datacenter, plus the added layers of Kubernetes controllers:
+
+- Errors from the command line
+- Pod logs and state of Pods
+- Use shell to troubleshoot Pod DNS and network
+- Check node logs for errors, make sure there are      enough resources allocated
+- RBAC, SELinux or AppArmor for security settings​
+- API calls to and from controllers to kube-apiserver
+- Inter-node network issues, DNS and firewall
+- Control plane controllers (control Pods in pending or error state, errors in log files, sufficient resources, etc).
+
+Make extensive use of tools such as [Prometheus](https://prometheus.io/), Grafana, [FluentD](https://www.fluentd.org/), [OpenTracing](https://opentracing.io/) or [Jaeger](https://www.jaegertracing.io/) to monitor the Cluster.
+
+In Kubernetes, the kubelet writes container logs to local files (via the Docker logging driver). The kubectl logs command allows you to retrieve these logs.
+
+More information is available in [Kubernetes Official Troubleshooting Doc](https://kubernetes.io/docs/tasks/debug-application-cluster/troubleshooting/)
